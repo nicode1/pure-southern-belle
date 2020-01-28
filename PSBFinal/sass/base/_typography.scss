@@ -1,0 +1,75 @@
+
+/*****************************TYPOGRAPHY*******************************/
+
+.section__title {
+  text-transform: uppercase;
+  margin: 0 0 -0.25% 8%;
+  padding-top: 4%;
+  font-size: 1.5rem;
+}
+
+.section__headline {
+  font-size: 3.5rem;
+  display: inline-block;
+  color: var(--yellow-main);
+  margin: 0 8%;
+}
+
+p {
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  font-size: 1.7rem;
+}
+
+.heading--tertiary {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+}
+
+/********************JAVASCRIPT TICKER ANNOUNCEMENT*************/
+
+.typed {
+  font-family: "Fontdiner Swanky", cursive;
+  font-size: 2.8rem;
+  font-weight: 400;
+  position: absolute;
+  left: 15%;
+  z-index: 5;
+  color: red;
+  letter-spacing: 1px;
+  margin: 5rem auto;
+  width: 36%;
+}
+
+@media only screen and (max-width: 980px) {
+  .typed {
+    width: 70%;
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin: 6rem 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .typed {
+    text-align: center;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .typed {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 2rem auto 1rem auto;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}

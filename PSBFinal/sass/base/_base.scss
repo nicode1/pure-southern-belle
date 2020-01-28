@@ -1,0 +1,24 @@
+
+:root {
+  --yellow-main: #f6cf4b;
+  --grey-font: #5a5a5a;
+  --blue-main: #69c4ec;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 50%;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  color: var(--grey-font);
+  width: 100vw;
+}

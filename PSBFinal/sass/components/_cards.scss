@@ -1,0 +1,225 @@
+
+/************************SERVICES CARDS************************/
+
+.services {
+  height: auto;
+
+  &__container {
+    perspective: 150rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 1% 6% 0 6%;
+  }
+
+  &__card {
+    background-color: #fff;
+    height: 50rem;
+    width: 100%;
+    margin: 2%;
+    border-radius: 5px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__heading {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin: 1.5rem;
+    text-align: center;
+  }
+
+  &__details {
+    margin: 0 2rem;
+    font-size: 1.6rem;
+    text-align: justify;
+  }
+
+  &__picture {
+    background-size: cover;
+    height: 26rem;
+    background-blend-mode: color;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    &--1 {
+      background-image: linear-gradient(to right bottom, #ff53ca, #ff2c7d),
+        url(images/PSBglass.jpg);
+    }
+
+    &--2 {
+      background-image: linear-gradient(to right bottom, #f7d04b, #e2a634),
+        url(images/LynneaInYellowWithProducts.jpg);
+    }
+
+    &--3 {
+      background-image: linear-gradient(to right bottom, #38c0fd, #0054a2),
+        url(images/PSBMississippiCraft.jpg);
+    }
+
+    &--4 {
+      background-image: linear-gradient(to right bottom, #00c483, #00b93d),
+        url(images/PSBtshirts.jpg);
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .services__container {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  .services__card {
+    height: 45rem;
+    margin: 2rem auto;
+  }
+
+  .services__picture {
+    height: 30rem;
+    background-position: center;
+  }
+}
+
+
+/************************ORDER CARDS************************/
+
+.order {
+  height: auto;
+  background-image: linear-gradient(to top, #eeff93, var(--yellow-main));
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 85%);
+  padding: 3% 0 8% 0;
+
+  &__headline {
+    color: #fff;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2% 8% 2% 8%;
+  }
+
+  &__card {
+    width: 25%;
+    height: 68%;
+    padding: 3rem;
+    border-radius: 3px;
+    font-size: 1.75rem;
+
+    background-color: rgba(245, 245, 245, 0.95);
+
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+  }
+
+  &__card:hover {
+    transform: translateY(-4%);
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  &__card__text {
+    text-align: justify;
+    hyphens: auto;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+  }
+
+  &__icon {
+    height: 10rem;
+    width: 10rem;
+    padding: 1.5rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #a78100;
+    font-weight: bold;
+    font-size: 1.6rem;
+
+    &:hover {
+      color: var(--yellow-main);
+    }
+  }
+
+  &__arrow-container {
+    width: 3%;
+    align-self: center;
+  }
+  &__arrow--right {
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .order {
+    height: auto;
+    clip-path: none;
+    width: 100%;
+  }
+
+  .order__container {
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .order__card {
+    display: block;
+    width: 86%;
+    margin: 2rem auto;
+    height: auto;
+  }
+
+  .order__arrow-container {
+    width: auto;
+  }
+
+  .order__arrow--right {
+    display: block;
+    transform: rotate(90deg);
+  }
+}
+
+.zelle {
+  color: #6e3fd3;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.venmo {
+  color: #40819E;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+
+.card__title--order {
+  text-transform: uppercase;
+}
+
+.card__icon {
+  height: 2rem;
+  width: 2rem;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: -5px;
+
+  &--email {
+    font-size: 1.2rem;
+  }
+}
+
+.icon__cash-app {
+  border-radius: 15%;
+}
+

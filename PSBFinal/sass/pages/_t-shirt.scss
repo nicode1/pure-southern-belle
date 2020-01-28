@@ -1,0 +1,40 @@
+
+/************************T-SHIRT PAGE*********************/
+
+.t-shirt {
+  height: auto;
+  color: #f6f6f6;
+  background-color: #0000ff;
+  text-align: center;
+  padding: 5rem;
+
+  &__title--main {
+    font-size: 4rem;
+    color: var(--yellow-main);
+  }
+
+  &__title-descriptor {
+    font-size: 2.8rem;
+    color: #fff;
+    margin: 2rem 0;
+  }
+
+  &__title--secondary {
+    font-size: 2.8rem;
+    color: var(--yellow-main);
+    margin: 2rem 0;
+  }
+
+  &__text {
+    line-height: 2;
+    font-size: 2rem;
+  }
+
+  &__hr {
+    height: 3px;
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+    background-color: #000;
+  }
+}
